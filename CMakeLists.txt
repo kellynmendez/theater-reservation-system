@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.17)
+project(Project_4)
+
+set(CMAKE_CXX_STANDARD 14)
+
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wextra")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wuninitialized")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+set(GCC_COVERAGE_COMPILE_FLAGS "-pedantic-errors")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wconversion")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
+
+add_executable(Project_4 main.cpp Seat.cpp Seat.h Node.h Auditorium.h Auditorium.cpp HashMap.cpp HashMap.h)
