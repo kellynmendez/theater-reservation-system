@@ -1,5 +1,4 @@
-/** Kellyn Mendez - CS 2337.003, Project 4
-*      NetID: kpm200000
+/** Allows users to log in, reserve seats in three different auditoriums, view and update orders, and choose to display receipts.
 */
 
 #include <iostream>
