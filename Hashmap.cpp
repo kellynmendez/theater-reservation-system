@@ -1,5 +1,4 @@
-/** Kellyn Mendez - CS 2337.003, Project 4
- *      NetID: kpm200000
+/** Hashmap class
  */
 
 #include "Hashmap.h"
